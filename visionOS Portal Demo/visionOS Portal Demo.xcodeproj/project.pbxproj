@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		00819F842B896DEC00F7C73B /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 00819F832B896DEC00F7C73B /* RealityKitContent */; };
 		00819F862B896DEC00F7C73B /* visionOS_Portal_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00819F852B896DEC00F7C73B /* visionOS_Portal_DemoApp.swift */; };
-		00819F882B896DEC00F7C73B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00819F872B896DEC00F7C73B /* ContentView.swift */; };
 		00819F8A2B896DEC00F7C73B /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00819F892B896DEC00F7C73B /* ImmersiveView.swift */; };
 		00819F8C2B896DEC00F7C73B /* ImageBasedLighting.skybox in Resources */ = {isa = PBXBuildFile; fileRef = 00819F8B2B896DEC00F7C73B /* ImageBasedLighting.skybox */; };
 		00819F8E2B896DEE00F7C73B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00819F8D2B896DEE00F7C73B /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		00819F7E2B896DEC00F7C73B /* visionOS Portal Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "visionOS Portal Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00819F822B896DEC00F7C73B /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		00819F852B896DEC00F7C73B /* visionOS_Portal_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visionOS_Portal_DemoApp.swift; sourceTree = "<group>"; };
-		00819F872B896DEC00F7C73B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		00819F892B896DEC00F7C73B /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		00819F8B2B896DEC00F7C73B /* ImageBasedLighting.skybox */ = {isa = PBXFileReference; lastKnownFileType = file.skybox; path = ImageBasedLighting.skybox; sourceTree = "<group>"; };
 		00819F8D2B896DEE00F7C73B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				00819F852B896DEC00F7C73B /* visionOS_Portal_DemoApp.swift */,
-				00819F872B896DEC00F7C73B /* ContentView.swift */,
 				00819F892B896DEC00F7C73B /* ImmersiveView.swift */,
 				00819F8B2B896DEC00F7C73B /* ImageBasedLighting.skybox */,
 				00819F8D2B896DEE00F7C73B /* Assets.xcassets */,
@@ -161,7 +158,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00819F882B896DEC00F7C73B /* ContentView.swift in Sources */,
 				00819F862B896DEC00F7C73B /* visionOS_Portal_DemoApp.swift in Sources */,
 				00819F8A2B896DEC00F7C73B /* ImmersiveView.swift in Sources */,
 			);

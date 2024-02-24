@@ -212,5 +212,38 @@ def Xform "Root"
             int ui:nodegraph:node:stackingOrder = 1363
         }
     }
+
+    def Material "Material"
+    {
+        color3f inputs:sphere_color = (1, 0.48516425, 0) (
+            colorSpace = "srgb_displayp3"
+            customData = {
+                dictionary realitykit = {
+                    float2 positionInSubgraph = (-126.08594, 24.632812)
+                    float2 sizeInSubgraph = (149.5, 53)
+                    int stackingOrderInSubgraph = 4
+                }
+            }
+        )
+        prepend token outputs:mtlx:surface.connect = </Root/Material/PreviewSurface.outputs:out>
+        token outputs:realitykit:vertex
+        float2 ui:nodegraph:realitykit:subgraphOutputs:pos = (299.25, 99.5)
+        float2 ui:nodegraph:realitykit:subgraphOutputs:size = (181.5, 99)
+
+        def Shader "PreviewSurface"
+        {
+            uniform token info:id = "ND_UsdPreviewSurface_surfaceshader"
+            color3f inputs:diffuseColor.connect = </Root/Material.inputs:sphere_color>
+            float inputs:metallic = 1
+            float3 inputs:normal
+            float inputs:opacity
+            float inputs:roughness
+            token outputs:out
+            float2 ui:nodegraph:node:pos = (74.25, 99.5)
+            float2 ui:nodegraph:node:size = (148.5, 199)
+            int ui:nodegraph:node:stackingOrder = 5
+            string[] ui:nodegraph:realitykit:node:attributesShowingChildren = ["inputs:diffuseColor", "inputs:opacity"]
+        }
+    }
 }
 

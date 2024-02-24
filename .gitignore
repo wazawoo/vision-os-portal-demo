@@ -1,13 +1,15 @@
 archives
-*.cer
-*.certSigningRequest
 serviceAccountKey.json
 GoogleService-Info.plist
 xcuserdata
 
-*.xcworkspace
-*.xcuserstate
+*.cer
+*.certSigningRequest
 *.mobileprovision
 *.p8
 *.p12
+*.rcuserdata
+*.xcworkspace
+*.xcuserstate
+*.xcuserstate
 **/.DS_Store

@@ -10,11 +10,11 @@ import SwiftUI
 @main
 struct visionOS_Portal_DemoApp: App {
     var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }.windowStyle(.volumetric)
-
-        ImmersiveSpace(id: "ImmersiveSpace") {
+        // To have this immersive space as the base scene in your app:
+        // UIApplicationPreferredDefaultSceneSessionRole
+        // must be set to
+        // UISceneSessionRoleImmersiveSpaceApplication
+        ImmersiveSpace(id: .exampleSceneName) {
             ImmersiveView()
         }.immersionStyle(selection: .constant(.full), in: .full)
     }
